@@ -2,6 +2,12 @@
 * {box-sizing: border-box;}
 
 // VARIABLES
+$color-black: rgba(75, 75, 77, 1);
+$color-brown: rgba(186, 150, 110, 1);
+$color-cream: rgba(224, 216, 199, 1);
+$color-yellow: rgba(228, 163, 78, 1);
+$color-orange: rgba(203, 86, 44, 1);
+
 $color-text-body: rgba(0,0,0, .8);
 $color-text-headings: rgba(0,0,0, 1);
 $color-accent: rgba(255, 187, 0);
@@ -11,8 +17,8 @@ $color-accent-light: rgba(255, 202, 202);
 
 $color-lightgrey: rgba(0, 0, 0, .5);
 
-$font-family-sans: 'acumin-pro', Helvetica, Arial, sans-serif;
-$font-family-serif: 'kepler-std-display', Georgia, 'Times New Roman', Times, serif;
+$font-family-main-sans: 'itc-avant-garde-gothic-pro', Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'cambay', Georgia, 'Times New Roman', Times, sans-serif;
 
 // BREAKPOINTS
 $breakpoint-small: 768px;

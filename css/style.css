@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* BASE TEXT FONTS */
 body {
-  font-family: "acumin-pro", Helvetica, Arial, sans-serif;
+  font-family: "cambay", Georgia, "Times New Roman", Times, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "kepler-std-display", Georgia, "Times New Roman", Times, serif;
+  font-family: "itc-avant-garde-gothic-pro", Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -112,7 +112,7 @@ hr {
 /* SECTION HEADING */
 .section-heading {
   font-size: 1em;
-  font-family: "acumin-pro", Helvetica, Arial, sans-serif;
+  font-family: "itc-avant-garde-gothic-pro", Helvetica, Arial, sans-serif;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -267,7 +267,7 @@ body {
 .site-header {
   position: absolute;
   width: 100%;
-  padding: 1em;
+  padding: 1em 5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,17 +327,24 @@ section {
 
 /* HERO SECTION */
 .hero {
-  background-color: black;
   color: white;
   text-align: center;
   padding: 6em 0;
-  min-height: 100vh;
+  min-height: 95vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
 }
+.hero h3 {
+  color: rgb(75, 75, 77);
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 0.25em;
+}
 .hero h1 {
-  color: white;
+  color: rgb(203, 86, 44);
+  text-transform: uppercase;
   margin-bottom: 0.25em;
 }
 .hero p {
@@ -345,11 +352,14 @@ section {
 }
 
 /* SITE-HEADER SITE-NAV */
+.site-header .site-nav {
+  /* BIG SCREENS */
+}
 .site-header .site-nav .menu-button {
   position: absolute;
-  top: 0.75em;
+  top: 1.75em;
   right: 0.75em;
-  color: white;
+  color: rgb(75, 75, 77);
   margin: 0;
   font-size: 1.5em;
   line-height: 1;
@@ -359,7 +369,7 @@ section {
   cursor: pointer;
 }
 .site-header .site-nav .menu-button svg {
-  fill: white;
+  fill: rgb(75, 75, 77);
 }
 .site-header .site-nav .menu-button svg rect {
   -webkit-transition: 0.3s all ease-out;
@@ -369,7 +379,7 @@ section {
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(224, 216, 199);
   position: fixed;
   top: 0;
   right: 0;
@@ -393,6 +403,14 @@ section {
   -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
   z-index: 1;
+}
+.site-header .site-nav ul li {
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.site-header .site-nav ul li a {
+  color: rgb(75, 75, 77);
 }
 .site-header .site-nav li {
   font-size: 4vw;
@@ -429,6 +447,46 @@ section {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
   opacity: 1;
+}
+@media (min-width: 768px) {
+  .site-header .site-nav .menu-button {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .site-header .site-nav ul {
+    background-color: transparent;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    position: static;
+    width: auto;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .site-header .site-nav li {
+    max-width: 40vw;
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: 0.3em;
+    min-width: 0;
+    margin: 0 1em 0 10em;
+  }
+  .site-header .site-nav li a {
+    font-size: 2.5em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: rgb(75, 75, 77);
+    font-family: "itc-avant-garde-gothic-pro", Helvetica, Arial, sans-serif;
+  }
+  .site-header .site-nav li a:hover {
+    color: rgb(203, 86, 44);
+  }
 }
 
 /* FOOTER SITE-NAV */
