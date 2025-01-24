@@ -123,3 +123,116 @@
          transform: translate(0, 0);
      }
  }
+
+ /* SCROLL/REVEAL ANIMATION */
+.inline-photo-right {
+    opacity: 0;
+    transform: translate(20px, 0);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+}
+
+.inline-photo-right.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.inline-photo-left {
+    opacity: 0;
+    transform: translate(-20px, 0);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+}
+
+.inline-photo-left.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.inline-photo-center {
+    opacity: 0;
+    transform: scale(.8);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+}
+
+.inline-photo-center.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.inline-photo-above {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+    transition: all 1s ease-out;
+}
+
+.inline-photo-above.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.inline-photo-above-p {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+    transition: all 1s ease-out;
+}
+
+.inline-photo-above-p.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition-delay: .8s;
+}
+
+.inline-photo-below {
+    opacity: 0;
+    transform: translate(0, -20px);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+    transition: all 1s ease-out;
+}
+
+.inline-photo-below.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.inline-photo-above2 {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: transform 2s,
+                opacity .3s .25s ease-out;
+    width: 100%;
+    will-change: transform, opacity;
+}
+
+.inline-photo-above2.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* ARROW BOUNCE ANIMATION */
+@keyframes bounce { 
+    0%, 100% {
+    transform: translateY(0);
+}
+
+50% {
+    transform: translateY(15px); /* Move it down */
+}
+}

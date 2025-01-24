@@ -1,6 +1,6 @@
 /* BASE TEXT COLORS */ 
-body {color: $color-text-body;}
-h1, h2, h3, h4, h5, h6 {color: $color-text-headings;}
+body {color: $color-black;}
+h1, h2, h3, h4, h5, h6 {color: $color-black;}
 
 /* BASE TEXT FONTS */ 
 body {font-family: $font-family-sans-serif;}
@@ -60,14 +60,14 @@ hr {
     font-weight: 700;
     line-height: 1;
     margin: 0;
-    color: $color-accent;
+    color: $color-orange;
 }
 
 .subheadline {
     font-weight: 400;
     font-size: 2.5em;
     line-height: 1.1;
-    color: $color-lightgrey;
+    color: $color-black;
     margin: .25em 0;
 }
 
